@@ -155,6 +155,7 @@
         <Compile Include="Services\CreateTokenService.cs" />
         <Compile Include="Services\GetBookingIdService.cs" />
         <Compile Include="Services\GetBookingService.cs" />
+        <Compile Include="Services\PartialBookingUpdateService.cs" />
         <Compile Include="Services\UpdateBookingService.cs" />
         <Compile Include="Tests\CreateBookingTests.cs" />
         <Compile Include="Tests\CreateTokenTests.cs" />
