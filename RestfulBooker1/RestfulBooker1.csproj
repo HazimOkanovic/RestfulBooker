@@ -140,6 +140,10 @@
         <Compile Include="Models\GetBookingId\GetBookingIdResponse.cs" />
         <Compile Include="Models\GetBooking\GetBookingDatesResponse.cs" />
         <Compile Include="Models\GetBooking\GetBookingResponse.cs" />
+        <Compile Include="Models\PartialBookingUpdate\Request\FirstAndLastNameUpdateRequest.cs" />
+        <Compile Include="Models\PartialBookingUpdate\Request\PriceDepositAndAdditionalNeedsRequest.cs" />
+        <Compile Include="Models\PartialBookingUpdate\Response\PartialBookingUpdateResponse.cs" />
+        <Compile Include="Models\PartialBookingUpdate\Response\PartialUpdateBookingDatesResponse.cs" />
         <Compile Include="Models\UpdateBooking\UpdateBookingRequest\UpdateBookingDatesRequest.cs" />
         <Compile Include="Models\UpdateBooking\UpdateBookingRequest\UpdateBookingErrorRequest.cs" />
         <Compile Include="Models\UpdateBooking\UpdateBookingRequest\UpdateBookingRequest.cs" />
@@ -151,11 +155,13 @@
         <Compile Include="Services\CreateTokenService.cs" />
         <Compile Include="Services\GetBookingIdService.cs" />
         <Compile Include="Services\GetBookingService.cs" />
+        <Compile Include="Services\PartialBookingUpdateService.cs" />
         <Compile Include="Services\UpdateBookingService.cs" />
         <Compile Include="Tests\CreateBookingTests.cs" />
         <Compile Include="Tests\CreateTokenTests.cs" />
         <Compile Include="Tests\GetBookingIdTests.cs" />
         <Compile Include="Tests\GetBookingTests.cs" />
+        <Compile Include="Tests\PartialBookingUpdateTests.cs" />
         <Compile Include="Tests\UpdateBookingTests.cs" />
     </ItemGroup>
     <ItemGroup>

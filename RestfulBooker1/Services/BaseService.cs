@@ -57,18 +57,6 @@ namespace RestfulBooker1.Services
             return await _client.ExecuteAsync<T>(restRequest);
         }
 
-        public async Task<RestResponse<T>> PostAsync<T>(string endpoint, T body)
-        {
-            var jsonBody = JsonConvert.SerializeObject(body);
-            Console.WriteLine(jsonBody);
-            Console.WriteLine(_client.Options.BaseUrl + endpoint);
-
-            var restRequest = new RestRequest(endpoint, Method.Get)
-                .AddParameter(_acceptedContentType, jsonBody, ParameterType.RequestBody);
-
-            return await _client.ExecuteAsync<T>(restRequest);
-        }
-
         public async Task<RestResponse<W>> PostAsync<T,W>(string endpoint, T body)
         {
             string jsonBody = JsonConvert.SerializeObject(body);
@@ -77,6 +65,31 @@ namespace RestfulBooker1.Services
             
             restRequest.AddHeader("Accept", _accept);
             
+            return await _client.ExecuteAsync<W>(restRequest);
+        }
+        
+        public async Task<RestResponse<W>> PatchAsync<T,W>(string endpoint, T body, string token)
+        {
+            string jsonBody = JsonConvert.SerializeObject(body);
+            var restRequest = new RestRequest(endpoint, Method.Patch)
+                .AddParameter(_acceptedContentType, jsonBody, ParameterType.RequestBody);
+            
+            restRequest.AddHeader("Accept", _accept);
+            restRequest.AddHeader("Cookie", token);
+            _client.Authenticator = new HttpBasicAuthenticator(Constants.ValidUsername, Constants.ValidPassword);
+            
+            return await _client.ExecuteAsync<W>(restRequest);
+        }
+        
+        public async Task<RestResponse<W>> PatchAsyncWithoutAuth<T,W>(string endpoint, T body, string token)
+        {
+            string jsonBody = JsonConvert.SerializeObject(body);
+            var restRequest = new RestRequest(endpoint, Method.Patch)
+                .AddParameter(_acceptedContentType, jsonBody, ParameterType.RequestBody);
+            
+            restRequest.AddHeader("Accept", _accept);
+            restRequest.AddHeader("Cookie", token);
+
             return await _client.ExecuteAsync<W>(restRequest);
         }
         
