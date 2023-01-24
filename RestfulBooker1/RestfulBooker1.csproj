@@ -137,15 +137,18 @@
         <Compile Include="Models\CreateToken\Request\CreateTokenRequest.cs" />
         <Compile Include="Models\CreateToken\Response\CreateTokenErrorResponse.cs" />
         <Compile Include="Models\CreateToken\Response\CreateTokenResponse.cs" />
+        <Compile Include="Models\GetBookingId\GetBookingIdResponse.cs" />
         <Compile Include="Models\GetBooking\GetBookingDatesResponse.cs" />
         <Compile Include="Models\GetBooking\GetBookingResponse.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Services\BaseService.cs" />
         <Compile Include="Services\CreateBookingService.cs" />
         <Compile Include="Services\CreateTokenService.cs" />
+        <Compile Include="Services\GetBookingIdService.cs" />
         <Compile Include="Services\GetBookingService.cs" />
         <Compile Include="Tests\CreateBookingTests.cs" />
         <Compile Include="Tests\CreateTokenTests.cs" />
+        <Compile Include="Tests\GetBookingIdTests.cs" />
         <Compile Include="Tests\GetBookingTests.cs" />
     </ItemGroup>
     <ItemGroup>
