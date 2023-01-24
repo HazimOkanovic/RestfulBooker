@@ -1,10 +1,7 @@
 using System;
 using RestfulBooker1.Helpers;
-<<<<<<< HEAD
-=======
 using RestfulBooker1.Models.UpdateBooking.UpdateBookingRequest;
 using RestfulBooker1.Models.UpdateBooking.UpdateBookingResponse;
->>>>>>> 59f5aa8dfd5720bab55f2e31ffe53419912853aa
 using RestSharp;
 
 namespace RestfulBooker1.Services
