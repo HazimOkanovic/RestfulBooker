@@ -156,6 +156,7 @@
         <Compile Include="Tests\CreateTokenTests.cs" />
         <Compile Include="Tests\GetBookingIdTests.cs" />
         <Compile Include="Tests\GetBookingTests.cs" />
+        <Compile Include="Tests\UpdateBookingTests.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="App.config" />
