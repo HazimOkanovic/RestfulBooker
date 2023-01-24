@@ -1,4 +1,6 @@
 using System;
+using RestfulBooker1.Models.CreateBooking.Request;
+using RestfulBooker1.Models.CreateBooking.Response;
 using RestSharp;
 
 namespace RestfulBooker1.Services

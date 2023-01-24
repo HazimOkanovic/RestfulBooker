@@ -1,3 +1,6 @@
+using System;
+using System.Linq;
+
 namespace RestfulBooker1
 {
     public class Constants
@@ -8,5 +11,15 @@ namespace RestfulBooker1
         public const string BadCredentials = "Bad credentials";
         public const string WrongUsername = "admin123";
         public const string WrongPassword = "password";
+        private static Random Random = new Random();
+        public static string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[Random.Next(s.Length)]).ToArray());
+        }
+
+        public static readonly string FirstName = RandomString(6);
+        public static readonly string LastName = RandomString(8);
     }
 }

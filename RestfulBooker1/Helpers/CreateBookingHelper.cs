@@ -1,3 +1,9 @@
+using System;
+using RestfulBooker1.Models.CreateBooking.Request;
+using RestfulBooker1.Models.CreateBooking.Response;
+using RestfulBooker1.Services;
+using RestSharp;
+
 namespace RestfulBooker1.Helpers
 {
     public class CreateBookingHelper
