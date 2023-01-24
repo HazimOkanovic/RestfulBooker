@@ -3,5 +3,8 @@
   &lt;Or&gt;&#xD;
     &lt;ProjectFile&gt;F3B6F816-C964-4472-876E-102E875304E9/d:Tests/f:CreateTokenTests.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;F3B6F816-C964-4472-876E-102E875304E9/d:Tests/f:CreateBookingTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::F3B6F816-C964-4472-876E-102E875304E9::.NETFramework,Version=v4.8::RestfulBooker1.Tests.GetBookingTests.GetBooking&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
