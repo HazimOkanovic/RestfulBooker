@@ -129,12 +129,19 @@
         <Compile Include="Helpers\ConfigHelper.cs" />
         <Compile Include="Helpers\CreateBookingHelper.cs" />
         <Compile Include="Helpers\CreateTokenHelper.cs" />
+        <Compile Include="Models\CreateBooking\Request\BookingDatesRequest.cs" />
+        <Compile Include="Models\CreateBooking\Request\CreateBookingRequest.cs" />
+        <Compile Include="Models\CreateBooking\Response\BookingDatesResponse.cs" />
+        <Compile Include="Models\CreateBooking\Response\BookingResponse.cs" />
+        <Compile Include="Models\CreateBooking\Response\CreateBookingResponse.cs" />
         <Compile Include="Models\CreateToken\Request\CreateTokenRequest.cs" />
         <Compile Include="Models\CreateToken\Response\CreateTokenErrorResponse.cs" />
         <Compile Include="Models\CreateToken\Response\CreateTokenResponse.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Services\BaseService.cs" />
+        <Compile Include="Services\CreateBookingService.cs" />
         <Compile Include="Services\CreateTokenService.cs" />
+        <Compile Include="Tests\CreateBookingTests.cs" />
         <Compile Include="Tests\CreateTokenTests.cs" />
     </ItemGroup>
     <ItemGroup>
