@@ -19,7 +19,7 @@ namespace RestfulBooker.Tests
             Assert.That(response.Data.LastName, Is.EqualTo(Constants.LastName));
             Assert.That(response.Data.TotalPrice, Is.EqualTo(200));
             Assert.That(response.Data.DepositPaid, Is.EqualTo(true));
-            Assert.That(response.Data.AdditionalNeeds, Is.EqualTo("nothing"));
+            Assert.That(response.Data.AdditionalNeeds, Is.EqualTo(Constants.Nothing));
         }
     }
 }

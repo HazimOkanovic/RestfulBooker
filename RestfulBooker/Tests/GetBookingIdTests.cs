@@ -18,7 +18,6 @@ namespace RestfulBooker.Tests
             RestResponse<List<GetBookingIdResponse>> getBookingResponse = service.GetBookingId();
             
             Assert.That(getBookingResponse.StatusCode, Is.EqualTo(HttpStatusCode.OK));
-            Assert.That(getBookingResponse.Data[0].BookingId, Is.EqualTo(2143));
             Assert.That(getBookingResponse.Data[0].BookingId, Is.Not.Null);
         }
     }

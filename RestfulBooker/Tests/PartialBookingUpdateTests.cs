@@ -22,7 +22,7 @@ namespace RestfulBooker.Tests
             Assert.That(response.Data.LastName, Is.EqualTo(Constants.LastName));
             Assert.That(response.Data.TotalPrice, Is.EqualTo(200));
             Assert.That(response.Data.DepositPaid, Is.EqualTo(true));
-            Assert.That(response.Data.AdditionalNeeds, Is.EqualTo("nothing"));
+            Assert.That(response.Data.AdditionalNeeds, Is.EqualTo(Constants.Nothing));
         }
 
         [Test]
@@ -31,12 +31,12 @@ namespace RestfulBooker.Tests
             PartialBookingUpdateService service = new PartialBookingUpdateService(ConfigHelper.WEB_API_URL);
 
             RestResponse<PartialBookingUpdateResponse> response =
-                service.PriceDepositAndNeedsUpdate(400, false, "breakfast");
+                service.PriceDepositAndNeedsUpdate(400, false, Constants.Breakfast);
             
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
             Assert.That(response.Data.TotalPrice, Is.EqualTo(400));
             Assert.That(response.Data.DepositPaid, Is.EqualTo(false));
-            Assert.That(response.Data.AdditionalNeeds, Is.EqualTo("breakfast"));
+            Assert.That(response.Data.AdditionalNeeds, Is.EqualTo(Constants.Breakfast));
         }
 
         [Test]

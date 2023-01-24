@@ -3,8 +3,5 @@
   &lt;ProjectFolder&gt;F3B6F816-C964-4472-876E-102E875304E9/d:Tests&lt;/ProjectFolder&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d4315fc5_002D76d7_002D42a4_002D992b_002D2fc146f5e79c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SuccessfulBookingUpdate" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::F3B6F816-C964-4472-876E-102E875304E9::.NETFramework,Version=v4.8::RestfulBooker1.Tests.PartialBookingUpdateTests.SuccessfulPriceDepositAndNeedUpdate&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::F3B6F816-C964-4472-876E-102E875304E9::.NETFramework,Version=v4.8::RestfulBooker1.Tests.PartialBookingUpdateTests.PartialBookingUpdateWithoutAuth&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;ProjectFolder&gt;F3B6F816-C964-4472-876E-102E875304E9/d:Tests&lt;/ProjectFolder&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -16,7 +16,7 @@ namespace RestfulBooker.Helpers
 
             RestResponse<CreateBookingResponse> response = service.CreateBooking(Constants.FirstName,
                 Constants.LastName, 200, true, new BookingDatesRequest(DateTime.Today.Date.ToString("MM/dd/yyyy"),
-                    DateTime.Today.Date.ToString("MM/dd/yyyy")), "nothing");
+                    DateTime.Today.Date.ToString("MM/dd/yyyy")), Constants.Nothing);
 
             int bookingId = response.Data.BookingId;
 

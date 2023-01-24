@@ -12,6 +12,11 @@ namespace RestfulBooker
         public const string WrongUsername = "admin123";
         public const string WrongPassword = "password";
         private static Random Random = new Random();
+        public const string Nothing = "nothing";
+        public const string Breakfast = "breakfast";
+        public const string MyName = "Hazim";
+        public const string MySurname = "Okanovic";
+        public const string SleepingBag = "Sleeping Bag";
         public static string RandomString(int length)
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
