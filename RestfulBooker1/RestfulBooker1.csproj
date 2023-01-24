@@ -148,6 +148,7 @@
         <Compile Include="Services\GetBookingService.cs" />
         <Compile Include="Tests\CreateBookingTests.cs" />
         <Compile Include="Tests\CreateTokenTests.cs" />
+        <Compile Include="Tests\GetBookingIdTests.cs" />
         <Compile Include="Tests\GetBookingTests.cs" />
     </ItemGroup>
     <ItemGroup>
