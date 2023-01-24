@@ -1,5 +1,7 @@
 using System;
 using RestfulBooker1.Helpers;
+using RestfulBooker1.Models.UpdateBooking.UpdateBookingRequest;
+using RestfulBooker1.Models.UpdateBooking.UpdateBookingResponse;
 using RestSharp;
 
 namespace RestfulBooker1.Services
