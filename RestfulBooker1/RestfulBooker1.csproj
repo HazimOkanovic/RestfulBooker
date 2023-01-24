@@ -38,10 +38,12 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Helpers\ConfigHelper.cs" />
+        <Compile Include="Helpers\CreateBookingHelper.cs" />
+        <Compile Include="Helpers\CreateTokenHelper.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Helpers" />
       <Folder Include="Models" />
       <Folder Include="Services" />
       <Folder Include="Tests" />
