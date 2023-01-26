@@ -153,6 +153,7 @@
         <Compile Include="Services\BaseService.cs" />
         <Compile Include="Services\CreateBookingService.cs" />
         <Compile Include="Services\CreateTokenService.cs" />
+        <Compile Include="Services\DeleteBookingService.cs" />
         <Compile Include="Services\GetBookingIdService.cs" />
         <Compile Include="Services\GetBookingService.cs" />
         <Compile Include="Services\PartialBookingUpdateService.cs" />
