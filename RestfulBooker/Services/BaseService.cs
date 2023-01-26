@@ -18,10 +18,15 @@ namespace RestfulBooker.Services
             _client = new RestClient(options);
         }
         
-        public async Task<RestResponse> DeleteAsync(string endpoint)
+        public async Task<RestResponse> DeleteAsync(string endpoint, string token)
         {
-            return await _client.ExecuteAsync(new RestRequest(endpoint, Method.Delete));
-        }
+            var request = new RestRequest(endpoint, Method.Delete);
+            
+            request.AddHeader("Accept", _accept);
+            request.AddHeader("Cookie", token);
+            _client.Authenticator = new HttpBasicAuthenticator(Constants.ValidUsername, Constants.ValidPassword);
+            return await _client.ExecuteAsync(request);
+        } 
 
         public async Task<RestResponse<T>> DeleteAsync<T>(string endpoint, T body)
         {
