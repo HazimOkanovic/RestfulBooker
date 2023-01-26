@@ -4,7 +4,7 @@ This is the project that I did for practising API automation testing with C#, Re
 
 I have used a documentation on the official website of RestfulBooker. 
 
-There are 19 tests in total. Tests are dividied into sections related to the used endpoint. 
+There are 21 tests in total. Tests are dividied into sections related to the used endpoint. 
 
 All the packages are downloaded from Nuget and they are as follows:
 
