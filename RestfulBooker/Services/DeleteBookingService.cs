@@ -12,9 +12,18 @@ namespace RestfulBooker.Services
             new CreateTokenHelper().CreateToken();
         }
 
-        RestResponse DeleteBooking()
+        public RestResponse DeleteBooking()
         {
             var rsp = DeleteAsync("/booking/" + CreateBookingHelper.BookingId, CreateTokenHelper.Token).Result;
+            Console.WriteLine("--------");
+            Console.WriteLine("Delete booking content: " + rsp.Content);
+            Console.WriteLine("--------");
+            return rsp;
+        }
+        
+        public RestResponse DeleteBookingWithIncorrectId()
+        {
+            var rsp = DeleteAsync("/booking/fgdfgf", CreateTokenHelper.Token).Result;
             Console.WriteLine("--------");
             Console.WriteLine("Delete booking content: " + rsp.Content);
             Console.WriteLine("--------");
